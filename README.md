@@ -23,7 +23,7 @@ It is ❗important❗ to specify the file type or extension.
 --filetype
 ```
 
-It is optional to specify the path by default it will take current working directory.
+It is optional to specify the path, by default it will take current working directory.
 ```
 --path
 ```

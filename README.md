@@ -10,7 +10,7 @@ python 3
 ```
 ## Usage
 
-Download the file and place it your Directory.
+Clone the repo or download the file.
 
 open command prompt and run python file.
 ```

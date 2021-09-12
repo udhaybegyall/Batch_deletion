@@ -31,5 +31,5 @@ It is optional to specify the path, by default it will take current working dire
 ```
 python batch_deletion.py --filetype .txt --path your path
 ```
-## Node-version (Checkout node version of batch_deletion which is more advanced)
+## Node-version
 [Batch Deletion Node](https://github.com/udhaybegyall/batch-deletion-node-version)

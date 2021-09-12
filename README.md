@@ -31,5 +31,12 @@ It is optional to specify the path, by default it will take current working dire
 ```
 python batch_deletion.py --filetype .txt --path your path
 ```
+
+## Multiple file type arguments
+You can pass multiple filetypes at sametime
+```
+batch_delete --filetype .txt .java .cpp
+```
+
 ## Node-version
 [Batch Deletion Node](https://github.com/udhaybegyall/batch-deletion-node-version)

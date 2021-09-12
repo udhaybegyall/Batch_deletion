@@ -9,6 +9,7 @@ parser.add_argument(
     "--filetype",
     type = str,
     default = None,
+    nargs = '+',
     help = "Files with the given name will be deleted (e.g: .txt)"
 )
 
@@ -33,15 +34,17 @@ deleted = 0
 
 for doc in docs:
 
-    # seperate name from file extension
-    full_doc_path , filetype = os.path.splitext(doc)
+    for ft in type_filter:
 
-    # delete file if the given filetype matches
-    if filetype == type_filter or type_filter is None:
-        
-        os.remove(doc)
-        deleted += 1
+        # seperate name from file extension
+        full_doc_path , filetype = os.path.splitext(doc)
 
-        print(f"Deleted file {doc}.")
+        # delete file if the given filetype matches
+        if filetype == ft or ft is None:
+
+            os.remove(doc)
+            deleted += 1
+
+            print(f"Deleted file {doc}")
 
 print(f"Deleted {deleted} of {len(docs)} files.")
